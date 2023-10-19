@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(images/bg.jpg);
+    background-size: 110vh;
+    margin-top: 5px;
+}
+.container{
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+#card{
+    padding: 30px 20px;
+   box-shadow: 0 20px 30px rgba(0,0,0,0.15);
+   border-radius: 10px;
+   margin-top: 10%;
+}
+#card img{
+    display: block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+}
+.hp{
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+}
+.poke-name{
+    text-align: center;
+    font-weight: 600;
+}
+.types{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+.hp span, .types span{
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600px;
+}
+.types span{
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.stats p{
+    color: #404060;
+}
+#btn{
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #a70000;
+    color: #ffffff;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius:5px ;
+}
+/*Responsive */
+@media screen  and (max-width:425px){
+
+    body{
+      background-image: url(images/mobile-bg.jpg);
+      background-size: 125vw;
+    }
+    .container{
+        width: 330px;
+    }
+    #card {
+        padding: 20px 20px;
+        width: 80%;
+        margin: 27% 0 0 10%;
+    }
+    .hp {
+        width: 58px;
+        padding: 0;
+    }
+    #card img {
+        width: 170px;
+        margin: 15px auto;
+    }
+    .types {
+        margin: 15px 0 20px 0;
+    }
+    #btn {
+        background-color:#262661;
+        padding: 13px 42px;
+        font-size: 16px;
+    }
+}
+
+@media screen  and (width:768px){
+    body{
+        background-image: url(images/tablet-bg.jpg);
+        background-size: cover;
+        background-size: 175vw;
+      }
+      .container{
+          width: 330px;
+      }
+      #card {
+          padding: 20px 20px;
+          width: 80%;
+          margin: 27% 0 0 10%;
+      }
+      .hp {
+          width: 58px;
+          padding: 0;
+      }
+      #card img {
+          width: 170px;
+          margin: 15px auto;
+      }
+      .types {
+          margin: 15px 0 20px 0;
+      }
+      #btn {
+          background-color:#6b0404;
+          padding: 13px 42px;
+          font-size: 16px;
+      }
+}
+@media screen  and (min-width:1024px){
+    body{
+        background-image: url(images/maxbg.jpg);
+        background-size: 130vw;
+      }
+}
